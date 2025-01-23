@@ -1,0 +1,21 @@
+.headerBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headerTitle {
+  font-size: 40px;
+  margin: 0;
+}
+
+.linkBlock {
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+}
+
+.linkBlock a {
+  color: black;
+  text-decoration: none;
+}

@@ -9,11 +9,14 @@ export const CountryList = () => {
   return (
     <div className={s.main}>
       <h2>Country List</h2>
-      <ul className={s.countryList}>
-        {data?.map((country) => (
-          <li key={country.cca3}>{country.name.common}</li>
-        ))}
-      </ul>
+
+      <div className={s.countryList}>
+        <ul>
+          {data?.map((country) => (
+            <li key={country.cca3}>{country.name.common}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

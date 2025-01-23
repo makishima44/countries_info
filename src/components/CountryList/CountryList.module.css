@@ -4,5 +4,7 @@
 
 .countryList {
   font-size: 20px;
-  font-weight: 600;
+  height: 600px;
+  font-weight: 500;
+  overflow-y: auto;
 }

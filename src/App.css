@@ -15,10 +15,6 @@ ul {
   list-style: none;
 }
 
-.main-title {
-  text-align: center;
-}
-
 .content-container {
   display: flex;
   justify-content: center;
