@@ -1,21 +1,12 @@
 * {
   font-family: "EB Garamond", serif;
+  padding: 0;
 }
 
 body {
-  background-color: rgb(75, 77, 79);
+  background-color: rgb(46, 48, 50);
 }
 
 h2 {
   font-size: 40px;
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-}
-
-.content-container {
-  display: flex;
-  justify-content: center;
 }

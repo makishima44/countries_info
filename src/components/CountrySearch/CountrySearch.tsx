@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from "react";
-import { useGetCountryByNameQuery } from "../Api/countris.api";
+import { useGetCountryByNameQuery } from "../../Api/countris.api";
+import s from "./CountrySearch.module.css";
 
 export const CountrySearch = () => {
   const [name, setName] = useState<string>("");
@@ -19,7 +20,7 @@ export const CountrySearch = () => {
   const country = data ? data[0] : null; // Берём только первую страну
 
   return (
-    <div>
+    <div className={s.main}>
       <h2>Country Search</h2>
       <div>
         <input type="text" value={name} onChange={onChangeName} />

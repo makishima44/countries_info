@@ -2,9 +2,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .headerTitle {
+  padding-top: 50px;
   font-size: 40px;
   margin: 0;
 }
@@ -12,10 +14,19 @@
 .linkBlock {
   display: flex;
   gap: 10px;
-  font-size: 24px;
 }
 
-.linkBlock a {
-  color: black;
+.link {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(46, 48, 50);
+  background-color: black;
   text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.link:hover {
+  color: red;
 }
