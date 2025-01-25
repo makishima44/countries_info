@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import { useGetCountryByNameQuery } from "../../Api/countris.api";
 import s from "./CountrySearch.module.css";
+import { Button } from "../Button/Button";
 
 export const CountrySearch = () => {
   const [name, setName] = useState<string>("");
@@ -17,14 +18,20 @@ export const CountrySearch = () => {
   const handleSearch = () => {
     setSkip(false);
   };
+
   const country = data ? data[0] : null; // Берём только первую страну
+
+  if (data && data.length > 0) {
+    setSkip(true);
+    setName("");
+  }
 
   return (
     <div className={s.main}>
       <h2>Country Search</h2>
       <div>
         <input type="text" value={name} onChange={onChangeName} />
-        <button onClick={handleSearch}>+</button>
+        <Button name={"Search"} onClick={handleSearch} />
       </div>
 
       {country ? (
