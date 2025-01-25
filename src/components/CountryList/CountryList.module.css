@@ -8,3 +8,8 @@
   font-weight: 500;
   overflow-y: auto;
 }
+
+.loading {
+  font-size: 30px;
+  color: red;
+}

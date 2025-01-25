@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { useGetCountryByNameQuery } from "../../Api/countris.api";
 import s from "./CountrySearch.module.css";
 import { Button } from "../Button/Button";
+import { Input } from "../Input/Input";
 
 export const CountrySearch = () => {
   const [name, setName] = useState<string>("");
@@ -29,8 +30,8 @@ export const CountrySearch = () => {
   return (
     <div className={s.main}>
       <h2>Country Search</h2>
-      <div>
-        <input type="text" value={name} onChange={onChangeName} />
+      <div className={s.searchBlock}>
+        <Input value={name} onChange={onChangeName} />
         <Button name={"Search"} onClick={handleSearch} />
       </div>
 

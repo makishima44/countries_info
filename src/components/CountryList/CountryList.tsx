@@ -10,7 +10,7 @@ export const CountryList = () => {
 
       <div className={s.countryList}>
         {isLoading ? (
-          <div>Loading...</div>
+          <div className={s.loading}>Loading...</div>
         ) : (
           <ul>
             {data?.map((country) => (
