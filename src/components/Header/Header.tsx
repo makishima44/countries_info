@@ -7,7 +7,7 @@ export const Header = () => {
       <h1 className={s.headerTitle}>Countries info</h1>
 
       <div className={s.linkBlock}>
-        <Link className={s.link} to="/all">
+        <Link className={s.link} to="/countries">
           List
         </Link>
         <Link className={s.link} to="/search">

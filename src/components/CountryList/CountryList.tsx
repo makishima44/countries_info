@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { useGetAllCountriesQuery } from "../../Api/countris.api";
 import s from "./CountryList.module.css";
 
@@ -20,7 +21,11 @@ export const CountryList = () => {
         ) : (
           <ul>
             {countries?.map((country) => (
-              <li key={country.iso3}>{country.name}</li>
+              <li key={country.iso3}>
+                <Link className={s.link} to={`/countries/${country.name}`}>
+                  {country.name}
+                </Link>
+              </li>
             ))}
           </ul>
         )}

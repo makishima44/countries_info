@@ -42,6 +42,9 @@ export const countriesApi = createApi({
     getCountryByName: builder.query<CountryData, string>({
       query: (name) => `countries/${name}`,
     }),
+    // getCountryByIso3: builder.query<CountryData, string>({
+    //   query: (iso3) => `countries/${iso3}`,
+    // }),
   }),
 });
 

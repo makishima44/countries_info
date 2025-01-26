@@ -14,7 +14,12 @@
   color: red;
 }
 
-li:hover {
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
   color: red;
   text-decoration: underline;
 }
