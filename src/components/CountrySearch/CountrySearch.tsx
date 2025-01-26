@@ -14,18 +14,14 @@ export const CountrySearch = () => {
 
   const onChangeName = (event: ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
+    setSkip(true);
   };
 
   const handleSearch = () => {
     setSkip(false);
   };
 
-  const country = data ? data[0] : null; // Берём только первую страну
-
-  if (data && data.length > 0) {
-    setSkip(true);
-    setName("");
-  }
+  const country = data?.data;
 
   return (
     <div className={s.main}>
@@ -37,9 +33,9 @@ export const CountrySearch = () => {
 
       {country ? (
         <div>
-          <h3>{country.name.common}</h3>
+          <h3>{country.name}</h3>
           <h3>{country.capital}</h3>
-          <img src={country.flags.png} alt="" />
+          <img src={country.href.flag} alt="" />
           <p>population :{country.population}</p>
         </div>
       ) : (
