@@ -31,16 +31,20 @@ export const CountrySearch = () => {
         <Button name={"Search"} onClick={handleSearch} />
       </div>
 
-      {country ? (
-        <div>
-          <h3>{country.name}</h3>
-          <h3>{country.capital}</h3>
-          <img src={country.href.flag} alt="" />
-          <p>population :{country.population}</p>
-        </div>
-      ) : (
-        <p>No country found or search is inactive</p>
-      )}
+      <div className={s.infoBlock}>
+        {country ? (
+          <div>
+            <p>country name: {country.name}</p>
+            <p>capital: {country.capital}</p>
+            <p>continent: {country.continent}</p>
+            <img src={country.href.flag} alt="" />
+            <p>population: {country.population}</p>
+            <p>size: {country.size}</p>
+          </div>
+        ) : (
+          <p>No country found or search is inactive</p>
+        )}
+      </div>
     </div>
   );
 };

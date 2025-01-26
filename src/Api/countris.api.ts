@@ -7,7 +7,9 @@ export type Country = {
   name: string;
   iso3: string;
   capital: string;
+  continent: string;
   population: string;
+  size: string;
   href: {
     flag: string;
   };
