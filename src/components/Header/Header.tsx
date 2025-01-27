@@ -13,6 +13,9 @@ export const Header = () => {
         <Link className={s.link} to="/search">
           Search
         </Link>
+        <Link className={s.link} to="/continents">
+          Continents
+        </Link>
       </div>
     </div>
   );

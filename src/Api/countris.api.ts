@@ -42,10 +42,10 @@ export const countriesApi = createApi({
     getCountryByName: builder.query<CountryData, string>({
       query: (name) => `countries/${name}`,
     }),
-    // getCountryByIso3: builder.query<CountryData, string>({
-    //   query: (iso3) => `countries/${iso3}`,
-    // }),
+    getCountriesByContinent: builder.query<CountriesData, string>({
+      query: (continent) => `countries?continent=${continent}`,
+    }),
   }),
 });
 
-export const { useGetAllCountriesQuery, useGetCountryByNameQuery } = countriesApi;
+export const { useGetAllCountriesQuery, useGetCountryByNameQuery, useGetCountriesByContinentQuery } = countriesApi;
