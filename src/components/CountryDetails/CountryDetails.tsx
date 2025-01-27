@@ -21,7 +21,7 @@ export const CountryDetails = () => {
           <div>
             <h3>{country.name}</h3>
             <p>Capital: {country.capital}</p>
-            <img src={country.href.flag} alt={`${country.name} flag`} />
+            <img className={s.countryImg} src={country.href.flag} alt={`${country.name} flag`} />
             <p>Population: {country.population}</p>
             <p>Continent: {country.continent}</p>
             <p>Size: {country.size}</p>

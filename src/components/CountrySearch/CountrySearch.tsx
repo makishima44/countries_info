@@ -37,7 +37,7 @@ export const CountrySearch = () => {
             <p>country name: {country.name}</p>
             <p>capital: {country.capital}</p>
             <p>continent: {country.continent}</p>
-            <img src={country.href.flag} alt="" />
+            <img className={s.countryImg} src={country.href.flag} alt="" />
             <p>population: {country.population}</p>
             <p>size: {country.size}</p>
           </div>

@@ -1,3 +1,48 @@
 .menuBlock {
   text-align: center;
 }
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.country {
+  padding: 5px;
+  background-color: rgb(46, 48, 50);
+  border: 2px solid black;
+  color: black;
+  border-radius: 8px;
+  height: 200px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.countryImg {
+  margin-top: 10px;
+  border: 3px solid black;
+  width: 180px;
+}
+.countryName {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.select {
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 700;
+}

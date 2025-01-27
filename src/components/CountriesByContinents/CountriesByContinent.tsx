@@ -14,6 +14,7 @@ export const CountriesByContinent = () => {
       <div className={s.menuBlock}>
         <h2>Continents</h2>
         <select
+          className={s.select}
           id="continents"
           name="continents"
           value={selectedContinent}
@@ -28,11 +29,17 @@ export const CountriesByContinent = () => {
         </select>
       </div>
 
-      <ul>
+      <div className={s.list}>
         {continent?.map((el) => {
-          return <li>{el.name}</li>;
+          return (
+            <div className={s.country}>
+              <span className={s.countryName}>{el.name}</span>
+              <span>Capital: {el.capital}</span>
+              <img className={s.countryImg} src={el.href.flag} alt="" />
+            </div>
+          );
         })}
-      </ul>
+      </div>
     </div>
   );
 };
