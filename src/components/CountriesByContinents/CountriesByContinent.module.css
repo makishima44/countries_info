@@ -11,10 +11,10 @@
 }
 
 .country {
-  padding: 5px;
-  background-color: rgb(46, 48, 50);
+  padding-bottom: 10px;
+  background-color: var(--background-color-country);
   border: 2px solid black;
-  color: black;
+  color: var(--text-color);
   border-radius: 8px;
   height: 200px;
   width: 100%;
@@ -24,12 +24,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   font-size: 20px;
   font-weight: 700;
 }
 
+.country:hover {
+  box-shadow: 4px 4px 10px var(--background-color-shadow), -4px -4px 10px var(--background-color-shadow);
+}
 .countryImg {
   margin-top: 10px;
   border: 3px solid black;
@@ -41,8 +43,10 @@
 }
 
 .select {
+  background-color: var(--background-color-country);
   height: 30px;
   width: 200px;
+  border-radius: 5px;
   font-size: 20px;
   font-weight: 700;
 }

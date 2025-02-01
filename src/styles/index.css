@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  --background-color: rgb(53, 54, 55);
+  --background-color-country: rgb(37, 38, 39);
+  --background-color-shadow: rgba(255, 255, 255, 0.5);
+  --text-color: black;
+
+  --button-bg: black;
+  --button-color: rgb(46, 48, 50);
+  --button-hover-color: red;
+}
+
+.light-theme {
+  --background-color: rgb(245, 245, 245);
+  --background-color-country: rgb(22, 192, 186);
+  --background-color-shadow: rgba(0, 0, 0, 0.75);
+  --text-color: black;
+
+  --button-bg: rgb(22, 192, 186);
+  --button-color: white;
+  --button-hover-color: rgb(200, 50, 50);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "EB Garamond", serif;
+}
+
+select,
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+h2 {
+  font-size: 40px;
+}

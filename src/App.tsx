@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router";
 import { CountryList } from "./components/CountryList/CountryList";
-
-import "./App.css";
 import { Header } from "./components/Header/Header";
 import { CountrySearch } from "./components/CountrySearch/CountrySearch";
 import { CountryDetails } from "./components/CountryDetails/CountryDetails";
 import { CountriesByContinent } from "./components/CountriesByContinents/CountriesByContinent";
+
+import "./styles/index.css";
 
 function App() {
   return (
