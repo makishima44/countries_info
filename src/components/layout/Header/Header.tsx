@@ -1,6 +1,7 @@
 import { Link } from "react-router";
+import { ThemeToggle } from "@ui/ThemeToggle";
+
 import s from "./Header.module.css";
-import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 export const Header = () => {
   return (

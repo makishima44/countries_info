@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { useGetCountryByNameQuery } from "../../Api/countris.api";
+import { useGetCountryByNameQuery } from "@api/countries";
 
 import s from "./CountryDetails.module.css";
 

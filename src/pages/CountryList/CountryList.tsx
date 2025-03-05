@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import { useGetAllCountriesQuery } from "../../Api/countris.api";
+import { useGetAllCountriesQuery } from "@api/countries";
+
 import s from "./CountryList.module.css";
 
 export const CountryList = () => {

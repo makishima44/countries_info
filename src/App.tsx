@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router";
-import { CountryList } from "./components/CountryList/CountryList";
-import { Header } from "./components/Header/Header";
-import { CountrySearch } from "./components/CountrySearch/CountrySearch";
-import { CountryDetails } from "./components/CountryDetails/CountryDetails";
-import { CountriesByContinent } from "./components/CountriesByContinents/CountriesByContinent";
+import { CountryList } from "@pages/CountryList";
+import { CountryDetails } from "@pages/CountryDetails";
+import { CountriesByContinent } from "@pages/CountriesByContinents";
+import { CountrySearch } from "@pages/CountrySearch";
+import { Header } from "@layout/Header";
 
 import "./styles/index.css";
 

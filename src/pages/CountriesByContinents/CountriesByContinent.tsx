@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useGetCountriesByContinentQuery } from "../../Api/countris.api";
+import { useGetCountriesByContinentQuery } from "@api/countries";
 
 import s from "./CountriesByContinent.module.css";
 

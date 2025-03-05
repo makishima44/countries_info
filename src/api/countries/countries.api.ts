@@ -48,4 +48,8 @@ export const countriesApi = createApi({
   }),
 });
 
-export const { useGetAllCountriesQuery, useGetCountryByNameQuery, useGetCountriesByContinentQuery } = countriesApi;
+export const {
+  useGetAllCountriesQuery,
+  useGetCountryByNameQuery,
+  useGetCountriesByContinentQuery,
+} = countriesApi;

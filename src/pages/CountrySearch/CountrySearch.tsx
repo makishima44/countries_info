@@ -1,8 +1,9 @@
 import { ChangeEvent, useState } from "react";
-import { useGetCountryByNameQuery } from "../../Api/countris.api";
+import { useGetCountryByNameQuery } from "@api/countries";
+import { Input } from "@ui/Input";
+import { Button } from "@ui/Button";
+
 import s from "./CountrySearch.module.css";
-import { Button } from "../Button/Button";
-import { Input } from "../Input/Input";
 
 export const CountrySearch = () => {
   const [name, setName] = useState<string>("");
