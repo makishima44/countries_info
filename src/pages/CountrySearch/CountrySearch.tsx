@@ -47,23 +47,25 @@ export const CountrySearch = () => {
     <div className={s.main}>
       <h2>Country Search</h2>
       <div className={s.searchBlock}>
-        <Input value={name} onChange={onChangeName} />
-        <Button name={"Search"} onClick={handleSearch} />
-      </div>
+        <div className={s.searchBlockInner}>
+          <Input value={name} onChange={onChangeName} />
+          <Button name={"Search"} onClick={handleSearch} />
+        </div>
 
-      {suggestions.length > 0 && (
-        <ul className={s.suggestions}>
-          {suggestions.map((suggestion) => (
-            <li
-              key={suggestion}
-              className={s.suggestionItem}
-              onClick={() => handleSelectSuggestion(suggestion)}
-            >
-              {suggestion}
-            </li>
-          ))}
-        </ul>
-      )}
+        {suggestions.length > 0 && (
+          <ul className={s.suggestions}>
+            {suggestions.map((suggestion) => (
+              <li
+                key={suggestion}
+                className={s.suggestionItem}
+                onClick={() => handleSelectSuggestion(suggestion)}
+              >
+                {suggestion}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
 
       <div className={s.infoBlock}>
         {country ? (
