@@ -1,3 +1,6 @@
+import { Button } from "../Button";
+import s from "./Pagination.module.css";
+
 type PaginationProps = {
   currentPage: number;
   totalPages: number;
@@ -5,18 +8,18 @@ type PaginationProps = {
 };
 export const Pagination = ({ currentPage, totalPages, onPageChange }: PaginationProps) => {
   return (
-    <div>
-      <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1}>
+    <div className={s.paginationBlock}>
+      <Button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1}>
         Back
-      </button>
+      </Button>
 
-      <span>
-        Page {currentPage} of {totalPages}
+      <span className={s.paginationPage}>
+        {currentPage} of {totalPages}
       </span>
 
-      <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+      <Button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages}>
         Next
-      </button>
+      </Button>
     </div>
   );
 };

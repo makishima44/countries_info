@@ -49,7 +49,7 @@ export const CountrySearch = () => {
       <div className={s.searchBlock}>
         <div className={s.searchBlockInner}>
           <Input value={name} onChange={onChangeName} />
-          <Button name={"Search"} onClick={handleSearch} />
+          <Button onClick={handleSearch}>Search</Button>
         </div>
 
         {suggestions.length > 0 && (

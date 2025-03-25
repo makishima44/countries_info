@@ -1,14 +1,7 @@
 import s from "./Button.module.css";
 
-type ButtonProps = {
-  name: string;
-  onClick: () => void;
-};
+type ButtonProps = {} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button = ({ name, onClick }: ButtonProps) => {
-  return (
-    <button className={s.button} onClick={onClick}>
-      {name}
-    </button>
-  );
+export const Button = ({ ...props }: ButtonProps) => {
+  return <button className={s.button} {...props}></button>;
 };

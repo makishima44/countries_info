@@ -3,8 +3,11 @@
 }
 
 .countryList {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   font-size: 20px;
-  height: 500px;
+  height: 350px;
   font-weight: 500;
   overflow-y: auto;
 }

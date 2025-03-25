@@ -1,0 +1,11 @@
+.paginationBlock {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.paginationPage {
+  font-size: 26px;
+  font-weight: 900;
+  color: black;
+}

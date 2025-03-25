@@ -42,3 +42,8 @@ button {
 h2 {
   font-size: 40px;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
